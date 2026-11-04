@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>后台管理 | Shop admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400&family=Noto+Serif+SC:wght@300;400&family=Noto+Sans+SC:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="bar">
+  <div class="container bar-in">
+    <h1>后台管理</h1>
+    <div class="bar-actions">
+      <a class="link" href="/" target="_blank" rel="noopener">查看网站</a>
+      <button class="btn btn-sm" id="add" type="button">新增产品</button>
+      <button class="btn btn-sm btn-solid" id="save" type="button">保存修改</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <p class="help">修改名称、价格、分类。换照片：点一下那一行，然后直接 Ctrl+V 粘贴复制的图片（也可以拖放图片到该行，或点击图片选择文件）。改完点「保存修改」，网站会立刻更新。保存前会自动备份上一版到 <code>data/products.backup.json</code>。</p>
+  <p class="status" id="status" role="status"></p>
+  <div class="head-row" aria-hidden="true"><span>照片</span><span>名称</span><span>价格 RM</span><span>分类</span><span>操作</span></div>
+  <ul class="rows" id="rows"></ul>
+</main>
+
+<input type="file" id="file" accept="image/jpeg,image/png,image/webp" hidden>
+<script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>香烟价目表 | Cigarette Price List</title>
+<meta name="description" content="国内正品，空运到马。香烟价目表，微信 / WhatsApp / Telegram 直接联系下单。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=sentient@300,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400&family=Noto+Serif+SC:wght@300;400&family=Noto+Sans+SC:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Age gate -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle" hidden>
+  <div class="stock gate-card">
+    <h2 id="gateTitle">年龄确认</h2>
+    <p>本网站仅供年满 18 岁的成年人浏览。<br>You must be 18 or older to enter.</p>
+    <div class="gate-actions">
+      <button class="btn" id="gateYes" type="button">我已满 18 岁</button>
+      <a class="link" href="https://www.google.com">离开</a>
+    </div>
+  </div>
+</div>
+
+<header class="nav" id="top">
+  <div class="container nav-in">
+    <nav class="nav-links" aria-label="页面">
+      <a href="#catalogue">款式</a>
+      <a href="#promise">服务</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <a class="wordmark" href="#top">香烟价目表</a>
+    <button class="btn btn-sm" id="cartOpen" type="button" aria-label="打开订购清单">订购清单<span class="badge" id="cartCount" hidden>0</span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-in">
+      <div class="hero-copy">
+        <h1>香烟价目表</h1>
+        <p class="lead">国内正品，空运到马，选好款式后直接联系我们下单。</p>
+        <div class="hero-actions">
+          <a class="btn" data-contact="wa" href="https://wa.me/601125221899" target="_blank" rel="noopener">WhatsApp 下单</a>
+          <a class="btn" data-contact="tg" href="https://t.me/landen7777" target="_blank" rel="noopener">Telegram 下单</a>
+          <a class="btn" data-contact="wechat" href="weixin://dl/chat?nhlg99999">微信下单</a>
+        </div>
+      </div>
+
+      <aside class="ledger" id="ledger" aria-labelledby="ledgerTitle" hidden>
+        <h2 id="ledgerTitle">款式一览</h2>
+        <p class="ledger-note">点一下，直达该系列。</p>
+        <ul id="ledgerList"></ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="catalogue" id="catalogue">
+    <div class="container">
+      <div class="sec-head">
+        <h2>全部款式</h2>
+        <p class="sec-note">点选分类，或搜索品牌。价格单位为马币 RM。</p>
+      </div>
+
+      <div class="picker">
+        <div class="rail" id="tabs" role="tablist" aria-label="分类"></div>
+        <div class="tools">
+          <label class="field"><span>搜索</span>
+            <input id="q" type="search" placeholder="例如：中华、荷花、七星" autocomplete="off">
+          </label>
+          <label class="field"><span>排序</span>
+            <select id="sort">
+              <option value="default">默认排序</option>
+              <option value="asc">价格从低到高</option>
+              <option value="desc">价格从高到低</option>
+            </select>
+          </label>
+          <p class="count" id="count"></p>
+        </div>
+      </div>
+
+      <div class="grid" id="grid" aria-live="polite"></div>
+      <p class="empty" id="empty" hidden>没有找到相关产品，换个关键词试试。</p>
+      <p class="fine">库存与价格可能随时变动，下单前请先联系确认。</p>
+    </div>
+  </section>
+
+  <section class="promise" id="promise">
+    <div class="container promise-in">
+      <h2>感恩相遇，真诚服务每一位顾客</h2>
+      <ul class="ruled">
+        <li><h3>正品保证</h3><span>Quality assurance</span></li>
+        <li><h3>诚信经营</h3><span>Honest business</span></li>
+        <li><h3>品质优选</h3><span>Quality selection</span></li>
+        <li><h3>品种齐全</h3><span>Complete variety</span></li>
+        <li><h3>物美价廉</h3><span>Quality and affordable</span></li>
+        <li><h3>贴心服务</h3><span>Intimate service</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="stock contact-card">
+        <h2>直接联系下单</h2>
+        <p class="sec-note">任选一个平台，点击即可跳转。</p>
+        <ul class="ruled contact-list">
+          <li>
+            <h3>微信 WeChat</h3>
+            <span class="num id">nhlg99999</span>
+            <a class="btn btn-sm" data-contact="wechat" href="weixin://dl/chat?nhlg99999">复制并打开</a>
+          </li>
+          <li>
+            <h3>WhatsApp</h3>
+            <span class="num id">1125221899</span>
+            <a class="btn btn-sm" data-contact="wa" href="https://wa.me/601125221899" target="_blank" rel="noopener">打开聊天</a>
+          </li>
+          <li>
+            <h3>Telegram</h3>
+            <span class="num id">@landen7777</span>
+            <a class="btn btn-sm" data-contact="tg" href="https://t.me/landen7777" target="_blank" rel="noopener">打开聊天</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container foot-in">
+    <p class="foot-mark">香烟价目表</p>
+    <p class="foot-small">谢谢惠顾，欢迎再次光临。</p>
+    <p class="warn">吸烟有害健康，请勿在禁烟场所吸烟。仅限 18 岁及以上人士。 Smoking is harmful to health. 18+ only.</p>
+  </div>
+</footer>
+
+<!-- Order list drawer -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+  <div class="drawer-head">
+    <h2 id="drawerTitle">订购清单</h2>
+    <button class="link" id="cartClose" type="button">关闭</button>
+  </div>
+  <ul class="lines" id="lines"></ul>
+  <p class="lines-empty" id="linesEmpty">清单还是空的。在产品上点「加入清单」。</p>
+  <div class="drawer-foot" id="drawerFoot">
+    <div class="sum"><span>合计（仅供参考）</span><b class="num" id="sumTotal">RM 0</b></div>
+    <div class="send-opts">
+      <a class="btn btn-sm" id="sendWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-sm" id="sendTg" href="https://t.me/landen7777" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn btn-sm" id="sendWx" href="weixin://dl/chat?nhlg99999">微信</a>
+    </div>
+    <p class="drawer-hint">选一个发送。WhatsApp 会自动带入清单；Telegram 和微信会先复制清单，到对话里粘贴即可。</p>
+    <div class="drawer-alt">
+      <button class="btn btn-sm" id="copyList" type="button">复制清单</button>
+      <button class="btn btn-sm" id="clearList" type="button">清空</button>
+    </div>
+  </div>
+</aside>
+
+<!-- Quick contact bar (phones) -->
+<nav class="dock" aria-label="快速联系">
+  <button type="button" id="dockCart">清单<span class="badge" id="dockCount" hidden>0</span></button>
+  <a data-contact="wa" href="https://wa.me/601125221899" target="_blank" rel="noopener">WhatsApp</a>
+  <a data-contact="wechat" href="weixin://dl/chat?nhlg99999">微信</a>
+  <a data-contact="tg" href="https://t.me/landen7777" target="_blank" rel="noopener">Telegram</a>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

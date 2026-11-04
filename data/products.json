@@ -1,0 +1,310 @@
+{
+  "cats": [
+    {
+      "key": "all",
+      "label": "全部"
+    },
+    {
+      "key": "zh",
+      "label": "中华"
+    },
+    {
+      "key": "lh",
+      "label": "荷花"
+    },
+    {
+      "key": "qx",
+      "label": "七星"
+    },
+    {
+      "key": "hhl",
+      "label": "黄鹤楼1916"
+    },
+    {
+      "key": "ot",
+      "label": "其他"
+    }
+  ],
+  "products": [
+    {
+      "id": "s1-01",
+      "name": "和天下粗",
+      "price": 800,
+      "cat": "ot",
+      "image": "up-1793796866682.png"
+    },
+    {
+      "id": "s1-02",
+      "name": "和天下中支",
+      "price": 800,
+      "cat": "ot",
+      "image": "s1-02.jpg"
+    },
+    {
+      "id": "s1-03",
+      "name": "和天下细",
+      "price": 800,
+      "cat": "ot",
+      "image": "s1-03.jpg"
+    },
+    {
+      "id": "s1-04",
+      "name": "大重九",
+      "price": 800,
+      "cat": "ot",
+      "image": "up-1793796914525.png"
+    },
+    {
+      "id": "s1-05",
+      "name": "黄金叶细支650",
+      "price": 800,
+      "cat": "ot",
+      "image": "up-1793796987241.png"
+    },
+    {
+      "id": "s1-06",
+      "name": "1916细支",
+      "price": 800,
+      "cat": "hhl",
+      "image": "s1-06.jpg"
+    },
+    {
+      "id": "s1-07",
+      "name": "1916软粗",
+      "price": 800,
+      "cat": "hhl",
+      "image": "s1-07.jpg"
+    },
+    {
+      "id": "s1-08",
+      "name": "1916红爆",
+      "price": 800,
+      "cat": "hhl",
+      "image": "s1-08.jpg"
+    },
+    {
+      "id": "s1-09",
+      "name": "1916小蜜蜂",
+      "price": 800,
+      "cat": "hhl",
+      "image": "s1-09.jpg"
+    },
+    {
+      "id": "s1-10",
+      "name": "金中支",
+      "price": 700,
+      "cat": "zh",
+      "image": "s1-10.jpg"
+    },
+    {
+      "id": "s1-11",
+      "name": "双中支",
+      "price": 500,
+      "cat": "zh",
+      "image": "s1-11.jpg"
+    },
+    {
+      "id": "s1-12",
+      "name": "细中华",
+      "price": 500,
+      "cat": "zh",
+      "image": "s1-12.jpg"
+    },
+    {
+      "id": "s1-13",
+      "name": "硬中",
+      "price": 350,
+      "cat": "zh",
+      "image": "s1-13.jpg"
+    },
+    {
+      "id": "s1-14",
+      "name": "软中 228-330",
+      "price": 550,
+      "cat": "zh",
+      "image": "s1-14.jpg"
+    },
+    {
+      "id": "s1-15",
+      "name": "软中328",
+      "price": 600,
+      "cat": "zh",
+      "image": "s1-15.jpg"
+    },
+    {
+      "id": "s1-16",
+      "name": "荷花 粗",
+      "price": 350,
+      "cat": "lh",
+      "image": "s1-16.jpg"
+    },
+    {
+      "id": "s1-17",
+      "name": "软荷花",
+      "price": 400,
+      "cat": "lh",
+      "image": "s1-17.jpg"
+    },
+    {
+      "id": "s1-18",
+      "name": "中支荷花",
+      "price": 400,
+      "cat": "lh",
+      "image": "s1-18.jpg"
+    },
+    {
+      "id": "s1-19",
+      "name": "细荷花",
+      "price": 400,
+      "cat": "lh",
+      "image": "up-1793797975162.png"
+    },
+    {
+      "id": "s1-20",
+      "name": "七星绵柔蓝 3mg",
+      "price": 400,
+      "cat": "qx",
+      "image": "s1-20.jpg"
+    },
+    {
+      "id": "s2-01",
+      "name": "日本七星柔和软白 1mg",
+      "price": 400,
+      "cat": "qx",
+      "image": "s2-01.jpg"
+    },
+    {
+      "id": "s2-02",
+      "name": "南京雨花石",
+      "price": 500,
+      "cat": "ot",
+      "image": "s2-02.jpg"
+    },
+    {
+      "id": "s2-03",
+      "name": "南京炫赫门",
+      "price": 200,
+      "cat": "ot",
+      "image": "up-1793797999306.png"
+    },
+    {
+      "id": "s2-04",
+      "name": "阳光利群",
+      "price": 350,
+      "cat": "ot",
+      "image": "s2-04.jpg"
+    },
+    {
+      "id": "s2-05",
+      "name": "欧版卡比龙",
+      "price": 600,
+      "cat": "ot",
+      "image": "s2-05.jpg"
+    },
+    {
+      "id": "s2-06",
+      "name": "欧版卡比龙棕",
+      "price": 700,
+      "cat": "ot",
+      "image": "s2-06.jpg"
+    },
+    {
+      "id": "s2-07",
+      "name": "芙蓉王粗",
+      "price": 240,
+      "cat": "ot",
+      "image": "s2-07.jpg"
+    },
+    {
+      "id": "s2-08",
+      "name": "玉溪",
+      "price": 240,
+      "cat": "ot",
+      "image": "s2-08.jpg"
+    },
+    {
+      "id": "s2-09",
+      "name": "峡谷柔情粗",
+      "price": 320,
+      "cat": "hhl",
+      "image": "s2-09.jpg"
+    },
+    {
+      "id": "s2-10",
+      "name": "峡谷柔情细",
+      "price": 300,
+      "cat": "hhl",
+      "image": "s2-10.jpg"
+    },
+    {
+      "id": "s2-11",
+      "name": "黄鹤楼（蓝楼）",
+      "price": 200,
+      "cat": "hhl",
+      "image": "s2-11.jpg"
+    },
+    {
+      "id": "s2-12",
+      "name": "黄鹤楼（奇景）",
+      "price": 280,
+      "cat": "hhl",
+      "image": "s2-12.jpg"
+    },
+    {
+      "id": "s2-13",
+      "name": "七星蓝软 6mg",
+      "price": 400,
+      "cat": "qx",
+      "image": "s2-13.jpg"
+    },
+    {
+      "id": "s2-14",
+      "name": "七匹狼灰狼",
+      "price": 220,
+      "cat": "ot",
+      "image": "s2-14.jpg"
+    },
+    {
+      "id": "s2-15",
+      "name": "跨越贵烟",
+      "price": 240,
+      "cat": "ot",
+      "image": "s2-15.jpg"
+    },
+    {
+      "id": "s2-16",
+      "name": "七星银硬 7mg",
+      "price": 400,
+      "cat": "qx",
+      "image": "s2-16.jpg"
+    },
+    {
+      "id": "s2-17",
+      "name": "七星蓝软 8mg",
+      "price": 400,
+      "cat": "qx",
+      "image": "s2-17.jpg"
+    },
+    {
+      "id": "s2-18",
+      "name": "七星蓝软 10mg",
+      "price": 400,
+      "cat": "qx",
+      "image": "s2-18.jpg"
+    },
+    {
+      "id": "s2-19",
+      "name": "七星金硬 10mg",
+      "price": 400,
+      "cat": "qx",
+      "image": "s2-19.jpg"
+    },
+    {
+      "id": "s2-20",
+      "name": "七星软白 14mg",
+      "price": 400,
+      "cat": "qx",
+      "image": "s2-20.jpg"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# local secrets and scratch
+admin.local.bat
+.env
+node_modules/
+# local backups
+_old-images/
+data/products.backup.json
+data/products.before-undo.json
+data/*.tmp
