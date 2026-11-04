@@ -155,6 +155,53 @@ h1 { max-width: 12ch; }
 .field input::placeholder { color: var(--color-pencil); }
 .field select { cursor: pointer; }
 .field input:focus-visible, .field select:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 4px; }
+
+/* ---- phones / tablets: compact sticky filter bar instead of tall strips + stacked fields ---- */
+@media (max-width: 60rem) {
+  .picker {
+    position: sticky; top: 68px; z-index: var(--z-sticky);
+    gap: var(--space-xs); padding: var(--space-xs) var(--gutter);
+    margin-inline: calc(var(--gutter) * -1);
+    background: color-mix(in oklab, var(--color-paper) 94%, transparent);
+    backdrop-filter: blur(10px); border-bottom: var(--rule-hair) solid var(--color-rule);
+  }
+  /* search + sort first, one row; category pills underneath */
+  .tools { order: -1; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-xs) var(--space-sm); align-items: end; }
+  .field span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; } /* label stays for screen readers */
+  .field input, .field select { min-height: 36px; font-size: var(--text-sm); }
+  .field select { padding-right: var(--space-sm); max-width: 9.5em; }
+  .count { grid-column: 1 / -1; font-size: var(--text-xs); line-height: 1; }
+
+  .rail { min-height: 0; padding: 0; gap: var(--space-xs); }
+  .rail::before { display: none; }
+  .strip, .strip:hover, .strip[aria-selected="true"] {
+    transform: none; width: auto; height: auto; padding: 6px 12px; gap: var(--space-2xs);
+    flex-direction: row; align-items: center; justify-content: center; white-space: nowrap;
+    clip-path: none; filter: none; border-radius: 999px;
+    background: var(--color-card); border: var(--rule-hair) solid var(--color-pencil);
+  }
+  .strip::before, .strip .s-no { display: none; }
+  .strip .s-name { writing-mode: horizontal-tb; font-size: var(--text-sm); }
+  .strip[aria-selected="true"] { background: var(--color-ink); border-color: var(--color-ink); }
+  .strip[aria-selected="true"] .s-name { color: var(--color-paper); text-decoration: none; }
+}
+/* get to the products fast: the ledger repeats the category pills, and the bottom dock already holds the order buttons */
+@media (max-width: 60rem) {
+  .ledger, .hero-actions { display: none; }
+  .hero-in { padding-block: var(--space-lg) var(--space-md); row-gap: 0; }
+  .hero .lead { margin-top: var(--space-xs); }
+  .catalogue { padding-block: var(--space-md) var(--space-xl); }
+}
+@media (max-width: 40rem) {
+  .hero h1 { font-size: var(--text-2xl); }
+  .sec-head { padding-bottom: var(--space-sm); }
+  .sec-head h2 { font-size: var(--text-xl); }
+  .grid { padding-top: var(--space-md); }
+  .picker { padding-block: 6px; }
+  .strip { padding: 5px 10px; }
+  .strip .s-name { font-size: var(--text-xs); }
+  .sec-note { display: none; }
+}
 .count { margin: 0; color: var(--color-pencil); font-size: var(--text-sm); }
 
 /* product stock cards */
